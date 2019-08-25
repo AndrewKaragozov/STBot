@@ -47,15 +47,15 @@ while(1 == 1):
             send(message='''
 С администратором можно связаться используя почту: admin@thesimpleblog.site
 Или в ВК - *karagozov (Андрей)
-Если он не отвечает можно написать *557200191 (Олегу),
+Если он не отвечает можно написать *id557200191 (Олегу),
 А если и он не отвечает, то напишите *nikanikto (Нике) или *aydova3 (Ире).
             ''')
           elif(response == 'статус'):
             direc = os.getcwd()
-            time = start_time - time.monotonic()
+            time1 = start_time - time.monotonic()
             send(message='''
 Рабочая директория - ''' +direc +'''
-Время с момента запуска - ''' +str(time) +''' секунд
+Время с момента запуска - ''' +str(int(time1)) +''' секунд
 Всего боту отправлено - ''' +str(kolvo) +''' сообщений
             ''')
           elif(response == 'о боте'):
